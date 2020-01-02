@@ -52,4 +52,70 @@ boxplot(mpg2$hwy, range=0)
 summary(mpg2$hwy)
 
 # 05. iris 데이터셋을 대상으로 8:2비율로 sampling하여 train과 test 셋을 만드시오.
+dim(iris)
+
+nrow(iris)
+
+idx <- sample(x = nrow(iris), size = nrow(iris)*0.8)
+idx
+
+train <- iris[idx, ]
+test <- iris[-idx, ]
+dim(train)
+dim(test)
+
+
+#########################
+# train/test model 적용
+#########################
+
+# 50% vs 50%
+idx <- sample(nrow(iris), nrow(iris)*0.5)
+
+train <- iris[idx, ]
+test <- iris[-idx, ]
+
+dim(train)
+dim(test)
+
+head(iris)
+# Sepal.Length : y(종속변수) -> 정답
+# Petal.Length : x(독립변수) -> 입력
+# model : 꽃잎 길이 -> 꽃받침 길이
+
+
+# train dataset model
+model <- lm(Sepal.Length ~ Petal.Length, data = train )
+model
+pred <- model$fitted.values # 예측치(꽃받침 길이)
+pred
+
+# test ataset model
+model2 <- lm(Sepal.Length ~ Petal.Length, data= test)
+pred2 <- model2$fitted.values #
+
+# train_y
+train_x <- train$Petal.Length # train 정답
+
+# test_y
+test_x <- test$Petal.Length # test 정답
+test_y <- test$Sepal.Length 
+
+# 정답 vs 예측치
+plot(train_x, pred, col="blue", pch=18) # plot(x,y)
+points(test_x, pred2, col="red",pch=19) # 
+
+# 예측치 vs 정답(참고용)
+plot(train_x, pred, col="blue", pch=18) # plot(x,y)
+points(test_x, test_y, col="red",pch=19) # 
+
+# 범례
+legend("topleft", legend = c("train", "test"),
+       col = c("blue", "red"), pch = c(18,19))
+
+
+
+
+
+
 
