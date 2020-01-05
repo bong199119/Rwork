@@ -121,7 +121,7 @@ chisq.test(c(4,6,17,16,8,9))
 
 # <검정통계량 해석>
 # X-squared= 14.2, df = 5
-X-squared >= 11.071 #(table) -> 기각
+# X-squared >= 11.071 #(table) -> 기각
 
 
 # (2) 선호도 분석 
@@ -252,6 +252,7 @@ install.packages("dplyr")
 library(dplyr)
 
 # dataset %>% function()  %>% <- 줄바꿈 안하고도 연속해서 연산해주는것
+
 iris %>% group_by(Species) %>% summarise(avg = mean(Sepal.Length))
 # 1 setosa      5.01
 # 2 versicolor  5.94

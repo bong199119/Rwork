@@ -153,7 +153,7 @@ dim(train) # 70  2
 dim(test) # 30  2
 
 
-
+?sample
 
 
 
