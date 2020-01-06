@@ -1,0 +1,89 @@
+chap02_DataStructure
+- Vector, Matrix, Data.frame 자료 구조 특징 
+
+
+1. vector : 동일 데이터 타입을 갖는 1차원 배열
+접근 : [index] : 1부터 시작
+동일한 타입의 데이터만 저장 가능
+벡터 데이터 생성 함수 : c(), seq(), rep()
+
+2. matrix : 동일 데이터 타입을 갖는 2차원 배열
+동일 데이터 타입을 갖는 2차원 배열
+Matrix 데이터 생성 함수
+ rbind() : 행묶음
+ cbind() : 컬럼 묶음
+Matrix 데이터 처리 함수
+ apply() : 함수적용
+
+
+3. data.frame : 열 단위로 서로 다른 데이터 타입을 갖는 배열
+-> 2차원 테이블 구조(DB 테이블과 유사)
+list와 Vector 혼합형
+- 컬럼 구성 : list, list 구성 : vector
+컬럼 단위로 서로 다른 자료형 가능
+
+
+4. Array : 동일 데이터 타입을 갖는 다차원 배열
+5. List : 서로 다른 데이터 구조(Vector, Data Frame, Array, List) 중첩
+
+
+- Matrix 색인(index) 형식
+- subset 함수 사용 형식
+- apply 함수 사용 형식
+
+chap05_Function
+- 사용자 정의 함수
+-> 스크립트보기(코딩인듯)
+ 
+chap06_DataVisualization
+ - 이산변수와 연속변수 시각화 유형  
+
+1. 이산변수(discrete quantitative data) 시각화
+- 정수단위로 나누어 측정할 수 있는 변수
+
+barplot() 형식 ? 막대차트 그리기 함수(가로, 세로)
+1행 2열 차트 그리기
+점 차트 시각화
+pie() 형식 ? 파일 차트 그리기 함수
+
+
+2. 연속변수(Continuous quantitative data)
+- 시간, 길이 등과 같이 연속성을 가진 실수 단위 변수값
+
+상자 그래프 그래프 시각화
+히스토그램 시각화
+산점도 시각화
+산점도와 회귀선 시각화
+변수간 비교 시각화 결과
+
+
+chap07_DEA_Preprocessing
+ - 결측치 처리, 
+ - 극단치 발견과 정제, 
+ - subset()함수,
+ - 척도 개념 
+
+chap09_CrossTableChiSquare
+ - 카이제곱검정
+
+chap10_Ttest_Anova
+ - 집단간 평균차이 검정 
+
+chap11_Correlation
+ -  공분산과 상관관계
+
+chap12_1_Regration
+ - 회귀모델 생성, 회귀계수, 회귀모델 해석 
+
+
+
+
+
+
+
+
+
+
+
+
+
