@@ -63,8 +63,10 @@ chap07_DEA_Preprocessing
  - subset()함수,
  - 척도 개념 
 
+
 chap09_CrossTableChiSquare
  - 카이제곱검정
+
 
 chap10_Ttest_Anova
  - 집단간 평균차이 검정 

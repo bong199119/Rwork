@@ -67,8 +67,8 @@ plot(iris$Petal.Length, iris$Petal.Width)
 
 # 음의 상관계수(-0.4284401)
 plot(iris$Petal.Length, iris$Sepal.Width)
-
-
+cov(iris[-5])
+str(iris)
 
 
 

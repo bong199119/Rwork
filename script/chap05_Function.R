@@ -284,6 +284,7 @@ set.seed(123)
 r <- rnorm (10)
 r
 
+?set.seed
 
 
 
